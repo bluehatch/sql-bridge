@@ -1,0 +1,28 @@
+<assembly>
+	<id>bin</id>
+	<formats>
+		<format>zip</format>
+		<format>tar.gz</format>
+	</formats>
+	<files>
+		<file>
+			<source>src/main/content/bin/sql-bridge.bat</source>
+			<fileMode>644</fileMode>
+		</file>
+		<file>
+			<source>src/main/content/bin/sql-bridge.sh</source>
+			<fileMode>755</fileMode>
+		</file>
+		<file>
+			<source>${project.build.directory}/${project.artifactId}-${project.version}.jar</source>
+			<destName>${project.build.finalName}.jar</destName>
+		</file>
+		<file>
+			<source>src/main/resources/application.properties</source>
+		</file>
+		<file>
+			<source>src/main/content/readme.txt</source>
+			<outputDirectory>lib</outputDirectory>
+		</file>
+	</files>
+</assembly>
