@@ -2,6 +2,8 @@
 
 ### Guides
 
+Backend service for executing Jdbc SQL through REST API.
+
 #### Build
 
 ```
@@ -14,7 +16,7 @@ mvnw package
 java -jar target/sql-bridge-x.y.z.jar
 ```
 
-#### SQL Query
+#### Excuting SQL
 
 ```
 POST http://[host]:[port]/sql/query
